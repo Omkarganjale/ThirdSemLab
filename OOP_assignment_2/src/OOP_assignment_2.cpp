@@ -1,10 +1,3 @@
-//============================================================================
-// Name        : OOP_assignment_2.cpp
-// Author      : OGan
-// Version     :
-// Copyright   : Free to use.
-// Description : Hello World in C++, Ansi-style
-//============================================================================
 
 #include <iostream>
 #include <string>
