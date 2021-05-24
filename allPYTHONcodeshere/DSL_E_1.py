@@ -1,4 +1,5 @@
 flag=0
+
 #Class student with public attributes string name, bool isc,bool isb, bool isf and some 
 class student:
     scnt=0;
@@ -25,9 +26,11 @@ def createnstoreobj(name,isc,isb,isf):
     student.scnt=student.scnt+1
 
 #main function
-scont=[]
+
+scont=[] #student object container
 while True:
     choice=int(input("\nPlease choose one of the following options\n1)Create a student profile \n2)Search few students \n3)go to assignment results \nPlease enter your option here: "))
+    
     if choice==1:
         tname=input("\nPlease enter the name of student: ").upper()
         #check the name in scontainer if already there then dont add
@@ -35,6 +38,7 @@ while True:
         for ob in scont:
             if ob.name==tname:
                 flag=1;
+                break;
         if flag==1:
             print("\nName already exists")
             continue;
@@ -56,6 +60,7 @@ while True:
             continue
         #passing those details to createnstoreobj function
         createnstoreobj(tname,tcb,tbb,tfb)
+
     if choice==2:
         scount=0
         tcs=input("\nDoes the required student play Cricket:(Y/N): ")
@@ -75,6 +80,7 @@ while True:
                 print("\n",ob.name) 
                 scount=scount+1
         print("\nShowing",scount,"out of",student.scnt)         
+    
     if choice==3:
         c3=int(input("\nchoose one of the following and enter\n1)List of students who play both cricket and badminton \n2)List of students who play either cricket or badminton but not both \n3)Number of students who play neither cricket nor badminton \n4)Number of students who play cricket and football but not badminton. \n5)students playing no game at all \n6)students playing badminton or football but not cricket\n"))
         if c3==1:

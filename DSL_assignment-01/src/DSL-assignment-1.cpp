@@ -6,7 +6,7 @@
 // Description : Hello World in C++, Ansi-style
 //============================================================================
 
-/*psedocode:
+/*pseudocode:
  1)start
  2)create a class name student with private variables name ,isc ,isb, isf
  3)create a function named check

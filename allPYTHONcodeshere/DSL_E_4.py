@@ -108,18 +108,18 @@ def fibonacci(lst,n):
     i=i-3               #i is same as seq no. of m2
     flag=False          #flag=False means n is not found yet
     while(m1>=1 and m2>=1 and flag==False):
-        fish=min(o+m2,n)
-        if lst[fish]==n:
-            R=fish
+        ref=min(o+m2,n)
+        if lst[ref]==n:
+            R=ref
             flag=True
             break
-        elif lst[fish]<n:    #move 1 down and reset offset
+        elif lst[ref]<n:    #move 1 down and reset offset
             m=m1
             m1=m2
             m2=fib(i-1)
             i=i-1            #updating index i of m2
-            o=fish
-        elif lst[fish]>n:    #move 2 down 
+            o=ref
+        elif lst[ref]>n:    #move 2 down 
             m=m2
             m1=fib(i-1)
             m2=fib(i-2)

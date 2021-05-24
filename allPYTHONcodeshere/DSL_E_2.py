@@ -6,11 +6,13 @@ Created on 18-Aug-2020
 
 
 class opera:
-    #clst=[]
-    #lstr
+
+    #lstr    =>string
+    #clst=[] =>list of words in lstr
+    
     def __init__(self,str):
         self.lstr=str
-        lst = []
+        lst = []           #temporary list
         f = 0
         ss = ""
         for i in range (0, len(self.lstr)):
@@ -18,6 +20,7 @@ class opera:
                 f = 0
             else:
                 f = 1
+
             if f == 0:
                 lst.append(ss)
                 ss = ""
@@ -28,7 +31,8 @@ class opera:
                     lst.append(ss + self.lstr[i]) 
                 else:            
                     ss = ss + self.lstr[i]
-        self.clst=lst
+        
+        self.clst=lst[:] 
 
 
     def rlongestword(self):
@@ -58,12 +62,11 @@ class opera:
 
 
     def indxofsubstr(self,sstr):
-        ic=0
+        r=-1
         for i in self.lstr:
             if i == sstr[0]:
-                if self.lstr[ic + 1:len(sstr)] == sstr[1:]:
-                    r = ic
-        ic+=1
+                if self.lstr[i + 1:i+len(sstr)] == sstr[1:]:
+                    r = i
         return r
 
 

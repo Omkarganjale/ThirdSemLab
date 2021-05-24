@@ -6,11 +6,7 @@
 // Description : Hello World in C++, Ansi-style
 //============================================================================
 
-/* Name:OMKAR SURESH GANJALE
- * Batch:E4
- * DOP:12th Aug.'20
- * DOS:
- */
+
 #include <iostream>
 using namespace std;
 

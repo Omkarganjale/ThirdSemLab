@@ -1,6 +1,6 @@
 //============================================================================
 // Name        : DSL_assignment-12.cpp
-// Author      : OGan
+// Author      : Omkar Ganjale
 // Version     :
 // Copyright   : Free to use.
 // Description : Hello World in C++, Ansi-style
